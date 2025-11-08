@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header class="hero small-hero">
+    <nav class="navbar transparent">
+        <div class="logo">
+            <img src="images/logo-white.png" alt="Journey" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Domů</a></li>
+            <li><a href="destinace.html">Destinace</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <video class="hero-video" autoplay muted loop playsinline poster="images/contact-hero.jpg">
+        <source src="videos/hero3.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <h1>Napiš nám</h1>
+        <p>Jsme tu, abychom ti pomohli naplánovat další dobrodružství.</p>
+    </div>
+</header>
+
+<main>
+    <section class="section fade-in">
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Jméno</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Zpráva</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Odeslat</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Journey — Tvoje další cesta začíná tady.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

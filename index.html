@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey — Objevuj krásu světa</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="hero">
+    <nav class="navbar transparent">
+        <div class="logo">
+            <img src="images/logo-white.png" alt="Journey" class="logo-img" loading="lazy">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#intro">Úvod</a></li>
+            <li><a href="destinace.html">Destinace</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero.jpg">
+        <source src="videos/hero.mp4" type="video/mp4">
+        <source src="videos/hero.webm" type="video/webm">
+    </video>
+
+    <div class="hero-content">
+        <h1>Objevuj. Cestuj. Inspiruj se.</h1>
+        <p>Minimalismus. Krása. Svoboda v pohybu.</p>
+        <button id="explore-btn">Začni cestu</button>
+    </div>
+</header>
+
+<main>
+    <section id="intro" class="section fade-in">
+        <h2>Smysl cestování</h2>
+        <p>
+            Cestování je o více než o místech. Je to o pohledu na svět, o klidu a o chvílích, které těníš na celý život.
+        </p>
+    </section>
+
+    <section id="destinations" class="section light fade-in">
+        <h2>Nezapomenutelná místa</h2>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="images/island.jpg" alt="Reykjavík, Island — polární záře" loading="lazy">
+                <div class="overlay">
+                    <h3>Island</h3>
+                    <p>Tanec polární záře</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="images/kyoto.jpg" alt="Kyoto, Japonsko — bambusový les" loading="lazy">
+                <div class="overlay">
+                    <h3>Japonsko</h3>
+                    <p>Ranní mlha v bambusovém lese</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="images/zermatt.jpg" alt="Zermatt, Švýcarsko — Matterhorn" loading="lazy">
+                <div class="overlay">
+                    <h3>Švýcarsko</h3>
+                    <p>Výhled na Matterhorn při východu slunce</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="images/maledives.jpg" alt="Maledivy" loading="lazy">
+                <div class="overlay">
+                    <h3>Maledivy</h3>
+                    <p>Vzpomínka na celý život</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<button id="scrollTop" aria-label="Posunout nahoru">
+    <!-- pokud máš arrow-up.svg, zobraz ho; jinak nech text -->
+    <img src="images/arrow-up.svg" alt="" aria-hidden="true" loading="lazy" class="scroll-icon">↑
+</button>
+
+<footer>
+    <p>&copy; 2025 Journey</p>
+</footer>
+
+</body>
+</html>
